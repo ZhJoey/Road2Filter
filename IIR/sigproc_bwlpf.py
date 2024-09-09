@@ -14,7 +14,7 @@ sgo = sga + sgb #+ (np.random.random(1000) - 0.5)
 
 np.savetxt('original.dat', sgo)
 
-os.system('cat original.dat | ../bin/bwlpf 4 1000 {:.2f} > filtered.dat'.format(fc/2))
+os.system('cat original.dat | ../bin/bwlpf 4 1000 {:.2f} > filtered.dat'.format(fc))
 
 sgf1 = np.loadtxt('filtered.dat')
 
